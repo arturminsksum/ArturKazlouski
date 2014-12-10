@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Task 2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Профиль</h1>
+	<form action="http://antonraby.com/oxagile/form.html" method="get" enctype="multipart/form-data">
+		<label>Я не бот
+			<input type="checkbox" name="Человек" value="Да">
+		</label>
+		<label class="no-clear">Выберите пол:
+			<span>Мужской</span>
+			<input type="radio" name="Пол" value="Мужской" checked>
+		</label>
+		<label class="no-clear">
+			<span>Женский</span>
+			<input type="radio" name="Пол" value="Женский"> 
+		</label>
+		<label>Имя:
+			<input type="text" name="Имя" placeholder="Введите ваше имя...">
+		</label>
+		<label class="">Фамилия:
+			<input type="password" name="Фамилия" placeholder="Введите вашу фамилию...">
+		</label>
+		<label>Дата рождения:
+			<input type="date" name="Дата&#160рождения">
+		</label>
+				<label><span>Информация о себе:</span>
+			<textarea class="clearfix" name="О&#160себе"></textarea>
+		</label>
+		<label>Знаю лучше всего:
+			<select name="Знаю&#160лучше&#160всего">
+				<option selected>HTML</option>
+				<option >CSS</option>
+				<option>JavaScript</option>
+				<option>PHP</option>
+			</select>
+		</label>
+		<label>Немного знаю:
+			<select multiple class="clearfix" name="Немного&#160знаю" size=4>
+				<option selected>CSS</option>
+				<option >JavaScript</option>
+				<option>PHP</option>
+				<option>Java</option>
+				<option>Больше&#160ничего</option>
+			</select>
+		</label>	
+		<label>Фото:
+			<input type="file" name="Фото">
+		</label>
+		<button>Отправить</button>
+	</form>
+</body>	
+</html>
+
