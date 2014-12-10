@@ -14,8 +14,7 @@ h1 {
 
 #picture{
 	float: left;
-	margin-right: 10px;
-	margin-bottom: 20px;
+	margin: 0 10px 20px 0;
 }
 
 
@@ -38,3 +37,4 @@ td:first-child{
     background: #D3D3D3;
     font-weight: bold;
     padding: 5px;
+}
