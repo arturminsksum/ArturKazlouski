@@ -1,0 +1,74 @@
+body {
+
+}
+
+
+.card {
+    width: 280px;
+    font: 14px/1.2 "Arial" sans-serif;
+    background: #ecf0f1;
+    margin: 0 40px 0 0;
+    background: #1abc9c;
+}
+
+.kurs {
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #FFF;
+
+}
+
+.learn {
+    padding: 0px 20px 15px;
+    color: #FFF;
+}
+.share {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+.oxagile {
+    display: inline-block;
+    width: 116px;
+    height: 91px;
+    margin-top: 10px;
+    background: #FFF url("../img/sprite.png") 0 0;
+
+
+}
+
+.social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-image: url('../img/sprite.png');
+    background-repeat: no-repeat;
+}
+
+.social-fb {
+    background-position: 0 -141px;
+    background-color: #3b5998;
+}
+
+.social-tw {
+    background-position: -30px -141px;
+    background-color: #00aced;
+}
+
+.social-g {
+    background-position: -60px -141px;
+    background-color: #dd4b39;
+}
+
+span:before {
+    content: "«"
+}
+span:after {
+    content: "»"
+}
+
