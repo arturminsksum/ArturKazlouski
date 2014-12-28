@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Homework 3</title>
+    <!-- Main styles-->
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row padding-row">
+                <div class="navbar-header">
+                    <a href="#" alt="Logo"><img src="img/logo.png" height="64" width="59" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="text-uppercase">Tour</a>
+                        </li>
+                        <li><a href="#" class="text-uppercase">Pricing</a>
+                        </li>
+                        <li><a href="#" class="text-uppercase">Login</a>
+                        </li>
+                        <li>
+                            <button type="button" class="register-button text-uppercase">Register</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h1>Which pricing package is right for you?</h1>
+                <p class="pricing-text">I need to upload around <span id="range-span">5 videos</span> using StreamSafe</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3 range">
+                <p>
+                    <input type="range" min="1" max="30" value="1" id="range" step="1" list="values">
+                </p>
+                <p>
+                    <ul class="list-inline range-list">
+                        <li><span class="vrt-line">|</span>
+                            <br>0</li>
+                        <li><span class="vrt-line">|</span>
+                            <br>5</li>
+                        <li><span class="vrt-line">|</span>
+                            <br>10</li>
+                        <li><span class="vrt-line">|</span>
+                            <br>15</li>
+                        <li><span class="vrt-line">|</span>
+                            <br>20</li>
+                        <li><span class="vrt-line">|</span>
+                            <br>25</li>
+                        <li><span class="vrt-line">|</span>
+                            <br>30+</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 cost-container">
+                <div class="cost-header">
+                    <h3 class="text-center">Free</h3>
+                    <p class="text-center cost-value">
+                        <sup>&pound;</sup> 0
+                        <sub>/mo</sub>
+                    </p>
+                    <p class="text-center text-uppercase">1 video</p>
+                    <p class="text-center">
+                        <button type="button" class="text-uppercase cost-button" id="one-videos">Get Started</button>
+                    </p>
+                </div>
+                <div class="cost-text">
+                    <p>
+                        <ul class="list-unstyled">
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>1 video upload</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Share with up to 10 users</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>DRM secure uploads</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Live video statistics</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Customised email watermark</li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>Notifications</del>
+                            </li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>Video watermarking</del>
+                            </li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>Branded StreamSafe sharing</del>
+                            </li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>Video annotations</del>
+                            </li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>HD video upload</del>
+                            </li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>Video archiving</del>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 cost-container">
+                <div class="cost-header">
+                    <h3 class="text-center">Basic</h3>
+                    <p class="text-center cost-value">
+                        <sup>&pound;</sup> 9
+                        <sub>/mo</sub>
+                    </p>
+                    <p class="text-center text-uppercase">20 video</p>
+                    <p class="text-center">
+                        <button type="button" class="text-uppercase cost-button" id="twenty-videos">Get Started</button>
+                    </p>
+                </div>
+                <div class="cost-text">
+                    <p>
+                        <ul class="list-unstyled">
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>1 video upload</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Share with up to 10 users</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>DRM secure uploads</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Live video statistics</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Customised email watermark</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Notifications</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Video watermarking</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Branded StreamSafe sharing</li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>Video annotations</del>
+                            </li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>HD video upload</del>
+                            </li>
+                            <li><span class="glyphicon glyphicon-remove grey" aria-hidden="true"></span>
+                                <del>Video archiving</del>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 cost-container">
+                <div class="cost-header">
+                    <h3 class="text-center">Professional</h3>
+                    <p class="text-center cost-value">
+                        <sup>&pound;</sup> 12
+                        <sub>/mo</sub>
+                    </p>
+                    <p class="text-center text-uppercase">Unlimited videos</p>
+                    <p class="text-center">
+                        <button type="button" class="text-uppercase cost-button" id="more-videos">Get Started</button>
+                    </p>
+                </div>
+                <div class="cost-text">
+                    <p>
+                        <ul class="list-unstyled">
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>1 video upload</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Share with up to 10 users</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>DRM secure uploads</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Live video statistics</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Customised email watermark</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Notifications</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Video watermarking</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Branded StreamSafe sharing</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Video annotations</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>HD video upload</li>
+                            <li><span class="glyphicon glyphicon-ok magenta" aria-hidden="true"></span>Video archiving</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row padding-row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p class="text-left text-uppercase magenta">Do you need multiple accounts</p>
+            </div>
+        </div>
+        <div class="row padding-row">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                <p class="text-justify grey">If you are a large enterprise and require a number of accounts please get in touch with us for a tailored pricing package based on your requirements.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right">
+                <button type="button" class="btn btn-default text-uppercase">Register for free</button>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text-left">
+                    <ul class="list-inline">
+                        <li>&copy;2014</li>
+                        <li><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Security</a>
+                        </li>
+                        <li><a href="#">Support</a>
+                        </li>
+                        <li><a href="#">Feadback + Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-right">
+                    <ul class="list-inline">
+                        <li><a href="#">Privacy</a>
+                        </li>
+                        <li><a href="#">Terms + Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
