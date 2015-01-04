@@ -1,10 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>New</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1,minimum-scale=1,minimal-ui" />
+    <title>JS Homework 4</title>
+    <!-- Main styles-->
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-	
-</body>	
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img alt="Brand" src="https://raw.githubusercontent.com/OXTraining/MikhailLarchanka/master/homework/css-practice/logo.png" height="70px">
+            </div>
+            <div class="collapse navbar-collapse">
+                <p class="navbar-text navbar-left">
+                    Рога и копыта
+                </p>
+                <form class="navbar-form navbar-right" role="search">
+                    <button type="submit" class="btn btn-default" id="searchButton"><span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <div class="form-group" style="display: none" id="searchForm">
+                        <input type="text" class="form-control" placeholder="Поиск">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline">
+                    <li><a href="#">Главная</a>
+                    </li>
+                    <li><a href="#">Новости</a>
+                    </li>
+                    <li><a href="#">Видео</a>
+                    </li>
+                    <li><a href="#">Галерея</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline">
+                    <li><a href="#news">Список последних новостей</a>
+                    </li>
+                    <li><a href="#galery">Последние галереи</a>
+                    </li>
+                    <li><a href="#video">Последние видео</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="news">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Последние новости</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="container-fluid-fluid">
+                            <div class="row" id="latestNews">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <ul class="list-inline">
+                            <li><a href="#news">Список последних новостей</a>
+                            </li>
+                            <li><a href="#galery">Последние галереи</a>
+                            </li>
+                            <li><a href="#video">Последние видео</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid" id="galery">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Последние галереи</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="container-fluid-fluid text-center">
+                            <div class="row" id="latestGalery">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <ul class="list-inline">
+                            <li><a href="#news">Список последних новостей</a>
+                            </li>
+                            <li><a href="#galery">Последние галереи</a>
+                            </li>
+                            <li><a href="#video">Последние видео</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="video">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Последние видео</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Видео 1</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="embedded">
+                                        <iframe src="http://player.vimeo.com/video/114959407?title=0&amp;byline=0&amp;portrait=0" width="100%" height="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Видео 2</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="embedded">
+                                        <iframe src="http://player.vimeo.com/video/114959407?title=0&amp;byline=0&amp;portrait=0" width="100%" height="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Видео 3</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="embedded">
+                                        <iframe src="http://player.vimeo.com/video/114959407?title=0&amp;byline=0&amp;portrait=0" width="100%" height="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Видео 4</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="embedded">
+                                        <iframe src="http://player.vimeo.com/video/114959407?title=0&amp;byline=0&amp;portrait=0" width="100%" height="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Видео 5</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="embedded">
+                                        <iframe src="http://player.vimeo.com/video/114959407?title=0&amp;byline=0&amp;portrait=0" width="100%" height="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Видео 6</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="embedded">
+                                        <iframe src="http://player.vimeo.com/video/114959407?title=0&amp;byline=0&amp;portrait=0" width="100%" height="0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <ul class="list-inline">
+                            <li><a href="#news">Список последних новостей</a>
+                            </li>
+                            <li><a href="#galery">Последние галереи</a>
+                            </li>
+                            <li><a href="#video">Последние видео</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">2015&copy;</div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">Фирма "Рога и копыта"</div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">Best of The Best</div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
