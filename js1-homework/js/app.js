@@ -51,6 +51,8 @@
     varFunction(varString);
     console.info("varNull:" + typeof(varNull));
     varFunction(varNull);
+    console.info("varUndefined:" + typeof(varUndefined));
+    varFunction(varUndefined);   
     console.info("varObject:" + typeof(varObject));
     varFunction(varObject);
     console.info("varArray:" + typeof(varArray));
@@ -82,7 +84,7 @@
     console.log("Array(\"while\" method):");
     var j = 0;
     while (j < varArray.length) {
-        console.info("Array[" + i + "]=" + varArray[i] + ";");
+        console.info("Array[" + j + "]=" + varArray[j] + ";");
         j++;
     };
 
