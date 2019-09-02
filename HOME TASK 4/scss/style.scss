@@ -1,5 +1,12 @@
-@charset "UTF-8";
+@charset "utf-8";
+
+// variables
+
+$theme: #0ebfdd;
+$theme-text: #45494d;
+
 /* basic rules */
+
 body {
   font-family: Tahoma;
   background: #f7fdfe;
@@ -27,23 +34,31 @@ p {
 }
 
 /* theme rules */
-.theme-bg {
-  background-color: #0ebfdd;
+
+.theme {
+  &-bg {
+    background-color: $theme;
+  }
+
+  &-color {
+    color: $theme;
+  }
+
+  &-text {
+    color: $theme-text;
+  }
 }
-.theme-color {
-  color: #0ebfdd;
-}
-.theme-text {
-  color: #45494d;
-}
+
+// state rules
 
 .is-hidden {
   visibility: hidden;
 }
 
 /* Layout rules */
+
 .clearfix:after {
-  content: ".";
+  content: '.';
   display: block;
   clear: both;
   visibility: hidden;
@@ -63,6 +78,7 @@ p {
 }
 
 /* end Layout rules */
+
 .l-header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -90,53 +106,67 @@ p {
 }
 
 /* nav module rules */
+
 .nav {
   padding-left: 0;
-}
-.nav-item {
-  display: inline;
-  margin-left: 20px;
-}
-.nav-item:before {
-  content: "∙";
-  margin-right: 20px;
-  color: #9498a0;
-}
-.nav-item:first-child:before, .nav-item:last-child:before {
-  content: none;
-}
-.nav-link, .nav-btn {
-  font-size: 14px;
-  color: #9498a0;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.nav-btn {
-  font-weight: 600;
-  color: #fff;
-  background: #0ebfdd;
-  padding: 12px 25px 11px;
-  border-radius: 19px;
+
+  &-item {
+    display: inline;
+    margin-left: 20px;
+
+    &:before {
+      content: '∙';
+      margin-right: 20px;
+      color: #9498a0;
+    }
+
+    &:first-child:before,
+    &:last-child:before {
+      content: none;
+    }
+  }
+
+  &-link {
+    font-size: 14px;
+    color: #9498a0;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &-btn {
+    @extend .nav-link;
+    font-weight: 600;
+    color: #fff;
+    background: $theme;
+    padding: 12px 25px 11px;
+    border-radius: 19px;
+  }
 }
 
 /* end nav module rules */
+
 .l-mission {
   padding-top: 405px;
   padding-bottom: 55px;
   background-image: url(../img/bridge-bg.png);
 }
 
-.mission-heading {
-  margin: 0;
-}
-.mission-heading span {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.mission-heading:before, .mission-heading:after {
-  vertical-align: middle;
-  font-size: 12px;
-  content: "✰";
+.mission {
+  &-heading {
+    margin: 0;
+
+    span {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &:before,
+    &:after {
+      vertical-align: middle;
+      font-size: 12px;
+      content: '✰';
+    }
+  }
 }
 
 .l-about {
@@ -144,10 +174,10 @@ p {
 }
 
 /* team section */
+
 .l-team {
   padding: 55px 0;
 }
-
 .l-persons {
   margin-top: 35px;
   padding-left: 0;
@@ -158,20 +188,21 @@ p {
   padding: 0 35px;
   display: inline-block;
   vertical-align: top;
-}
-.person-avatar {
-  margin-bottom: 25px;
-  border-radius: 50%;
-}
-.person-name {
-  font-size: 18px;
-  margin: 0 0 5px;
-  padding: 0;
-}
-.person-job {
-  font-size: 14px;
-  font-style: italic;
-  margin: 0;
+
+  &-avatar {
+    margin-bottom: 25px;
+    border-radius: 50%;
+  }
+  &-name {
+    font-size: 18px;
+    margin: 0 0 5px;
+    padding: 0;
+  }
+  &-job {
+    font-size: 14px;
+    font-style: italic;
+    margin: 0;
+  }
 }
 
 /*
@@ -184,7 +215,7 @@ p {
 }
 
 .services h2 {
-  color: #0ebfdd;
+  color: $theme;
   margin: 65px 0 0;
 }
 
@@ -226,7 +257,6 @@ p {
   border-radius: 50%;
   background-image: url(../img/sprite.png);
 }
-
 .sheet .design .icon {
   background-position: 0px -47px;
 }
@@ -254,7 +284,6 @@ p {
 .sheet .icon + div {
   overflow: hidden;
 }
-
 /*
 ****************
 * =.l-container6
@@ -267,7 +296,6 @@ p {
 .map {
   height: 600px;
 }
-
 /*
 ****************
 * =.l-container7 footer
@@ -289,17 +317,15 @@ p {
   height: 38px;
   margin: 20px 10px 0 0;
   vertical-align: middle;
-  background-image: url("../img/sprite.png");
+  background-image: url('../img/sprite.png');
 }
 
 .social.mail {
   background-position: -127px 0;
 }
-
 .social.fb {
   background-position: -168px 0;
 }
-
 .social.tw {
   background-position: -209px 0;
 }
@@ -353,9 +379,7 @@ p {
 
 .privacy li:nth-child(2):before,
 .privacy li:nth-child(3):before {
-  content: "|";
+  content: '|';
   margin-right: 15px;
   color: #9498a0;
 }
-
-/*# sourceMappingURL=style.css.map */

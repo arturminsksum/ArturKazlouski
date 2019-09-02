@@ -1,133 +1,148 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>New</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container one">
-		<header class="wrap">
-			<h4 class="clearfix"><a href="#">Oxagile</a></h4>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Sing in</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
-	<div class="container two">
-		<div class="mission wrap">
-			<h2>Our Mission</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-		</div>
-	</div>
-	<div class="container three">
-		<div class="about wrap">
-			<h2>About</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
-		</div>
-	</div>
-	<div class="container four">
-		<div class="team wrap">
-			<h2>Team</h2>
-			<ul>
-				<li>
-					<p class="person">Artur Kozlouski</p>
-					<p class="prof">Founder &amp; CEO</p>
-					<div class="photo me"></div>
-				</li>
-				<li>
-					<p class="person">Mikhail Larchenko</p>
-					<p class="prof">Front-End Developer</p>
-					<div class="photo misha"></div>
-				</li>
-				<li>
-					<p class="person">Anton Raby</p>
-					<p class="prof">Front-End Developer</p>
-					<div class="photo anton"></div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class="container five">
-		<div class="services wrap">
-			<h2>Our Services</h2>
-			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctelit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-			<div class="sheet">
-				<div class="design">
-					<div class="icon"></div>
-					<div>
-						<h3>Custom Design</h3>
-						Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam.
-					</div>
-				</div>
-				<div class="ideas">
-					<div class="icon"></div>
-					<div>
-						<h3>Inovative Ideas</h3>
-						Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-					</div>
-				</div>
-				<div class="answer">
-					<div class="icon"></div>
-					<div>
-						<h3>Love Is The Answer</h3>
-						Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-					</div>
-				</div>
-				<div class="layout">
-					<div class="icon"></div>
-					<div>
-						<h3>Responsive Layout</h3>
-						Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
-					</div>
-				</div>
-				<div class="support">
-					<div class="icon"></div>
-					<div>
-						<h3>24 / 7 Support</h3>
-						Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem.
-					</div>
-				</div>
-				<div class="star">
-					<div class="icon"></div>
-					<div>
-						<h3>Feel Like A Star</h3>
-						Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container six">
-		<div class="map wrap">
-		</div>
-	</div>
-	<div class="container seven">
-		<footer class="wrap">
-			<div class="share">
-				<a class="social mail" href="#"></a>
-				<a class="social fb" href="http://www.facebook.com/oxagile"></a>
-				<a class="social tw" href="https://twitter.com/oxagile"></a>
-			</div>
-			<div class="info">
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Faq</a></li>
-					<li><a href="#">Work&nbsp;with&nbsp;us</a></li>
-				</ul>
-			</div>
-			<div class="privacy">
-				<ul>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms and Conditions</a></li>
-					<li><a href="#">&copy; Oxagile LLC 2014</a></li>
-				</ul>				
-			</div>
-		</footer>
-	</div>
-</body>	
+  <head>
+    <meta charset="UTF-8" />
+    <title>SMACSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="l-container one">
+      <header class="l-header l-wrap">
+        <h1 class="heading is-hidden">Oxagile</h1>
+        <a href="#" class="l-logo">
+          <img class="logo" src="img/logo.png" alt="Oxagile" />
+        </a>
+        <nav class="l-nav">
+          <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-btn theme-bg">Sing in</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="l-container l-mission">
+      <div class="mission l-wrap">
+        <h2 class="mission-heading">
+          <span>Our Mission</span>
+        </h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500.
+        </p>
+      </div>
+    </div>
+    <div class="l-container">
+      <div class="l-about l-wrap">
+        <h2 class="theme-color">About</h2>
+        <p class="theme-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown.
+        </p>
+      </div>
+    </div>
+    <div class="l-container theme-bg">
+      <div class="l-team l-wrap">
+        <h2>Team</h2>
+        <ul class="l-persons">
+          <li class="person">
+            <img class="person-avatar" src="img/me.png" alt="avatar" />
+            <p class="person-name">Artur Kozlouski</p>
+            <p class="person-job">Founder &amp; CEO</p>
+          </li>
+          <li class="person">
+            <img class="person-avatar" src="img/misha.png" alt="avatar" />
+            <p class="person-name">Mikhail Larchenko</p>
+            <p class="person-job">Front-End Developer</p>
+          </li>
+          <li class="person">
+            <img class="person-avatar" src="img/anton.png" alt="avatar" />
+            <p class="person-name">Anton Raby</p>
+            <p class="person-job">Front-End Developer</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="l-container five">
+      <div class="services l-wrap">
+        <h2>Our Services</h2>
+        <p>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctelit. Fusce
+          dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        </p>
+        <div class="sheet">
+          <div class="design">
+            <div class="icon"></div>
+            <div>
+              <h3>Custom Design</h3>
+              Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam.
+            </div>
+          </div>
+          <div class="ideas">
+            <div class="icon"></div>
+            <div>
+              <h3>Inovative Ideas</h3>
+              Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+            </div>
+          </div>
+          <div class="answer">
+            <div class="icon"></div>
+            <div>
+              <h3>Love Is The Answer</h3>
+              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
+              condimentum.
+            </div>
+          </div>
+          <div class="layout">
+            <div class="icon"></div>
+            <div>
+              <h3>Responsive Layout</h3>
+              Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
+            </div>
+          </div>
+          <div class="support">
+            <div class="icon"></div>
+            <div>
+              <h3>24 / 7 Support</h3>
+              Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem.
+            </div>
+          </div>
+          <div class="star">
+            <div class="icon"></div>
+            <div>
+              <h3>Feel Like A Star</h3>
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-container six">
+      <div class="map l-wrap"></div>
+    </div>
+    <div class="l-container seven">
+      <footer class="l-wrap">
+        <div class="share">
+          <a class="social mail" href="#"></a>
+          <a class="social fb" href="http://www.facebook.com/oxagile"></a>
+          <a class="social tw" href="https://twitter.com/oxagile"></a>
+        </div>
+        <div class="info">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Work&nbsp;with&nbsp;us</a></li>
+          </ul>
+        </div>
+        <div class="privacy">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">&copy; Oxagile LLC 2014</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
