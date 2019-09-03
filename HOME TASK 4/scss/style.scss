@@ -47,6 +47,9 @@ p {
   &-text {
     color: $theme-text;
   }
+  &-footer-bg {
+    background-color: $theme-text;
+  }
 }
 
 // state rules
@@ -215,12 +218,10 @@ p {
 }
 
 .services h2 {
-  color: $theme;
   margin: 65px 0 0;
 }
 
 .services p {
-  color: #45494d;
   margin-bottom: 50px;
 }
 
@@ -233,7 +234,7 @@ p {
   font-size: 20px;
   font-weight: normal;
   font: 20px/1.4 Tahoma, sans-serif;
-  color: #45494d;
+  color: $theme-text;
 }
 
 .sheet > div {
@@ -242,7 +243,7 @@ p {
   margin-bottom: 30px;
   padding-right: 10px;
   font-size: 12px;
-  color: #45494d;
+  color: $theme-text;
   line-height: 21px;
   vertical-align: top;
   box-sizing: border-box;
@@ -253,7 +254,7 @@ p {
   width: 55px;
   height: 55px;
   margin-right: 20px;
-  border: 2px solid #0bd;
+  border: 2px solid $theme;
   border-radius: 50%;
   background-image: url(../img/sprite.png);
 }
@@ -289,7 +290,7 @@ p {
 * =.l-container6
 ****************
 */
-.l-container.six {
+.l-map {
   background-image: url(../img/map.png);
 }
 
@@ -302,7 +303,7 @@ p {
 ****************
 */
 .l-container.seven {
-  background: #45494d;
+  background: $theme-text;
 }
 
 .share {

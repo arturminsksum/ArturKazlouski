@@ -36,6 +36,9 @@ p {
 .theme-text {
   color: #45494d;
 }
+.theme-footer-bg {
+  background-color: #45494d;
+}
 
 .is-hidden {
   visibility: hidden;
@@ -184,12 +187,10 @@ p {
 }
 
 .services h2 {
-  color: #0ebfdd;
   margin: 65px 0 0;
 }
 
 .services p {
-  color: #45494d;
   margin-bottom: 50px;
 }
 
@@ -222,7 +223,7 @@ p {
   width: 55px;
   height: 55px;
   margin-right: 20px;
-  border: 2px solid #0bd;
+  border: 2px solid #0ebfdd;
   border-radius: 50%;
   background-image: url(../img/sprite.png);
 }
@@ -260,7 +261,7 @@ p {
 * =.l-container6
 ****************
 */
-.l-container.six {
+.l-map {
   background-image: url(../img/map.png);
 }
 
